@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Contact Us</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="../index.html" >Home</a>
+        <a href="./hermes.html">Hermes</a>
+        <a href="./dior.html">Dior</a>
+        <a href="./contact.html" class="active">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+      <br>
+      <div>
+        <div class="contact"><h1>Kontakty</h1>
+        <p>MP Bags s.r.o<br>
+          Kodanska 46<br>
+          101 00 Praha 10 <br>
+          Tel: 456 789 123<br>
+          Email: info@mpb.com<br>
+          IC: 456789132
+        </p></div>
+        
+        <hr>
+        <div class="flex-cont2">
+          <div class="card2" class="form">
+            <form action="/action_page.php">
+              <label for="fname"></label>
+              <input type="text" id="name" name="name" placeholder="Name">
+
+              <label for="lname"></label>
+              <input type="password" id="pass" name="password" placeholder="Password">
+    
+              <label for="lname"></label>
+              <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+              <select name="typ" >
+                <option value="nevybrano" selected>Choose an option</option>
+                <option value="investice">Investice</option>
+                <option value="cena">Pricing</option>
+                <option value="objednavka">status</option>
+              </select>
+
+              <textarea name="dotaz" placeholder="Please, enter your message"></textarea>
+
+              <br>
+              <fieldset>
+                <legend>Are you a customer?</legend>
+                  <input type="radio" name="typ" value="customer">I am a customer<br>
+                  <input type="radio" name="typ" value="no_customer">I am not a customer  
+              </fieldset>
+
+            
+              <input type="submit" value="Submit">
+            </form>     
+          </div>
+          <div class="card2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1522.7177477618845!2d14.46219020420611!3d50.06951321947171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b9379ec4f5cb5%3A0xf0ad5144deec08ce!2sKoda%C5%88sk%C3%A1%2046%2C%20101%2000%20Praha%2010-Vr%C5%A1ovice!5e0!3m2!1scs!2scz!4v1717066059862!5m2!1scs!2scz" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+            
+</body>
+  <footer></footer>
+</html>
